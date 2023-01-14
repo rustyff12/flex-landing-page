@@ -21,6 +21,8 @@ body {
 
 img {
     max-width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 h1, h2 {
@@ -86,6 +88,23 @@ section {
     color: #fff;
 }
 
+/* ---- Footer ---- */
+
+footer {
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    font-size: 1.5rem;
+}
+
+.footer p a {
+    color: black;
+}
+
 /* ---- Media Queries ---- */
 
 @media (min-width: 800px) {
@@ -101,5 +120,23 @@ section {
     .intro__title {
         font-size: 3.75rem;
     }
+
     
+}
+
+@media (max-width: 800px) {
+    .section-four > .container  {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .section-three > .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-three > .container,
+    .section-four > .container {
+        align-items: center;
+    }
 }
